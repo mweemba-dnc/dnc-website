@@ -1,0 +1,24 @@
+# Daka Ntembe Corporation (DNC)
+
+> DNC is a Zambian rural infrastructure organisation. It buys maize from smallholder farmers at a fair price, records every transaction through its platform Panjiia, and builds the trusted data, financial identity and infrastructure that rural prosperity depends on. Operating in Eastern Province, Zambia. Prosperity for all.
+
+## Pages
+- [About](https://www.dakantembe.com/about.html): Who DNC is, its belief, approach, vision, the DNC model and the team.
+- [What We Do](https://www.dakantembe.com/what-we-do.html): Markets and procurement, farmer data, finance and inclusion, infrastructure.
+- [Our Approach](https://www.dakantembe.com/approach.html): Why DNC starts with a trusted market, not a loan. The five-rung ladder.
+- [Panjiia](https://www.dakantembe.com/panjiia.html): The data and financial infrastructure behind DNC, and the ecosystem it connects.
+- [Impact](https://www.dakantembe.com/impact.html): Verifiable, GPS-tagged impact, where DNC works, and the SDGs.
+- [Insights](https://www.dakantembe.com/insights.html): Research, reports, farmer stories and market intelligence.
+- [Partners](https://www.dakantembe.com/partners.html): How to build with DNC.
+- [Careers](https://www.dakantembe.com/careers.html): Working at DNC.
+- [Contact](https://www.dakantembe.com/contact.html): info@dakantembe.com, Eastern Province, Zambia.
+
+## Insights (published analysis)
+- [Zambia's smallholders are not too risky to bank. They are invisible.](https://www.dakantembe.com/insight-smallholders-invisible.html): Why only about 14 percent of Zambian smallholder farmers reach formal credit. The binding constraint is information, not risk: a verified record of a farmer's trade is the missing asset, and it is a by-product of the formal market they are excluded from.
+- [Warehouse receipts were meant to bank Africa's farmers. Mostly, they bank its traders.](https://www.dakantembe.com/insight-warehouse-receipts.html): Two decades of adoption data, including the full transaction records of Malawi's commodity exchange, show warehouse receipt systems are used almost entirely by large traders, not smallholders. The structural reasons why, and why a trusted local record has to come first.
+- [Same land, smaller harvest: the gender gap in farming is a gap in access](https://www.dakantembe.com/insight-same-land-smaller-harvest.html): On farms of the same size, women produce about 24 percent less than men (FAO, 2023). The cause is unequal access to inputs, credit, training and secure land, not ability. Beneath it sits invisibility to finance. A verified record is one part of the answer, not the whole of it.
+
+## Facts
+- Legal name: Daka Ntembe Corporation Limited. Brand: DNC.
+- Location: Eastern Province, Zambia (Chipata, Petauke, Lundazi, Nyimba).
+- Contact: info@dakantembe.com
