@@ -22,3 +22,13 @@
 - Legal name: Daka Ntembe Corporation Limited. Brand: DNC.
 - Location: Eastern Province, Zambia (Chipata, Petauke, Lundazi, Nyimba).
 - Contact: info@dakantembe.com
+
+## Questions, answered directly
+
+Pages written for the questions farmers, buyers, funders and partners actually ask:
+
+- /smallholder-farmer-finance-zambia.html : why smallholders cannot get credit and how verified transaction data changes it
+- /maize-buyers-zambia.html : the buyers available to Zambian maize farmers and what a fair sale looks like
+- /farmer-data-zambia.html : why farmer data is rural infrastructure and what Panjiia records
+- /fund-rural-prosperity-zambia.html : for funders, how capital becomes permanent rural infrastructure at DNC
+- /faq.html : direct answers on what DNC is, where it works and how to engage
