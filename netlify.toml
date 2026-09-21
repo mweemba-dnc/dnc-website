@@ -1,5 +1,9 @@
 [build]
   publish = "."
+  # Editorial Design Standard hard rule (2026-08-29): every image seen before a
+  # piece is read must be a real documentary photograph. This check fails the
+  # build, so a breach cannot reach the site. See tools/check-insight-images.js.
+  command = "node tools/check-insight-images.js"
 
 [[headers]]
   for = "/*"
