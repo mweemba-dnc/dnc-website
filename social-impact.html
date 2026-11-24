@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Social protection | Daka Ntembe Corporation (DNC)</title>
+<meta name="description" content="Most of Africa has no social protection. DNC is in an active engagement with the ILO, NAPSA and NHIMA on reaching smallholder farmers at the point of sale.">
+<meta name="theme-color" content="#0F2133">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0F2133; --inkDeep:#0A1826; --card:#17324C; --ember:#EE6C3A; --emberTx:#C9552A;
+  --cream:#F7F0E2; --paper:#FBF7EF; --sand:#F2EADA;
+  --line:#E4DBC9; --lineD:#223A52; --mute:#5E5952; --muteD:#8A9AAC;
+  --maize:#F4B53F; --gold:#D8A53A; --sun:#F6C24A;
+  --pine:#0C2420; --pineTx:#CBD9D2;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Sora',Arial,sans-serif;
+  --body:'Inter',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.68;font-size:16.5px;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.w{max-width:1280px;margin:0 auto;padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
+.lab{font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.6px;text-transform:uppercase;color:var(--emberTx)}
+.lab.d{color:var(--maize)}
+.lab.q{color:var(--mute)}
+h1,h2,h3{font-weight:600;letter-spacing:-.3px;line-height:1.14;text-wrap:balance}
+.ed{font-family:var(--serif);font-weight:400;letter-spacing:-.6px;line-height:1.2}
+.st{font-family:var(--sans)}
+.cap{font-family:var(--body);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--mute);margin-top:12px}
+.cap.d{color:var(--muteD)}
+p.bd{font-size:16.5px;color:var(--mute);line-height:1.68}
+p.bd.d{color:rgba(247,240,226,.68)}
+.btn{display:inline-block;background:var(--ember);color:#fff;font-family:var(--sans);font-weight:600;font-size:14.5px;padding:15px 30px;border-radius:2px;transition:filter .2s,transform .2s}
+.btn:hover{filter:brightness(.93);transform:translateY(-2px)}
+.btn.o{background:transparent;border:1.5px solid rgba(247,240,226,.4);color:var(--cream)}
+.btn.o:hover{border-color:var(--cream);filter:none}
+.btn.k{background:transparent;border:1.5px solid rgba(15,33,51,.28);color:var(--ink)}
+.btn.k:hover{border-color:var(--ink);filter:none}
+.go{display:inline-block;font-family:var(--sans);font-weight:600;font-size:14px;color:var(--emberTx)}
+.go::after{content:" \2192";transition:margin .2s}
+.go:hover::after{margin-left:5px}
+.go.d{color:var(--maize)}
+a:focus-visible{outline:3px solid var(--ember);outline-offset:4px}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{transition:none!important}}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:70;background:rgba(10,24,38,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(247,240,226,.1)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:72px}
+nav a{color:var(--cream)}
+.nr{display:flex;align-items:center;gap:28px}
+.nr a{font-size:14px;font-weight:450;opacity:.72}.nr a:hover{opacity:1}
+.nr a.c{opacity:1;background:var(--ember);color:#fff;padding:9px 18px;border-radius:2px;font-family:var(--sans);font-weight:600;font-size:13px}
+.nb{display:none;background:none;border:0;cursor:pointer;color:var(--cream);padding:6px;margin:-6px;line-height:0}
+@media(max-width:1000px){.nb{display:block}.nr{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--inkDeep);border-bottom:1px solid rgba(247,240,226,.14);padding:4px 0;display:none}nav.open .nr{display:flex}.nr a{padding:14px 28px;font-size:16px;opacity:.9;border-bottom:1px solid rgba(247,240,226,.1)}.nr a.c{background:none;color:var(--maize)}}
+
+/* 1. HERO, one full-bleed frame */
+.hero{position:relative;background:var(--ink);color:var(--cream);min-height:640px;display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:74% 44%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,24,38,.97) 0%,rgba(10,24,38,.93) 30%,rgba(10,24,38,.62) 50%,rgba(10,24,38,.16) 76%,rgba(10,24,38,.05) 100%)}
+.hero .w{position:relative;z-index:2;padding-block:92px 72px}
+.lock{display:flex;align-items:center;gap:16px;margin-bottom:40px}
+.lock svg{height:46px;width:auto;flex:none}
+.lock .t{border-left:1px solid rgba(247,240,226,.28);padding-left:16px}
+.lock .t b{display:block;font-family:var(--sans);font-weight:700;font-size:22px;letter-spacing:3.4px;color:var(--cream);line-height:1}
+.lock .t span{display:block;font-family:var(--serif);font-style:italic;font-size:14px;color:var(--maize);margin-top:6px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,56px);color:var(--cream);max-width:21ch;line-height:1.08;letter-spacing:-1px;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--ember)}
+.hero p{font-size:18px;color:rgba(247,240,226,.84);max-width:41ch;margin-top:24px}
+.hero .acts{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.hero .hcap{position:absolute;right:max(28px,env(safe-area-inset-right,0px));bottom:22px;z-index:2;font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:rgba(247,240,226,.45)}
+
+/* 2. THE CHAIN, a row of four small portraits */
+.chain{background:var(--paper);padding-block:92px}
+.chain .top{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.chain h2{font-family:var(--serif);font-weight:400;font-size:clamp(25px,3vw,36px);max-width:20ch;margin-top:16px}
+.four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;margin-top:38px}
+.four figure{margin:0;min-width:0}
+.four img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.four .n{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:2.4px;color:var(--emberTx);margin-top:20px}
+.four h3{font-family:var(--sans);font-size:18px;margin-top:9px}
+.four p{font-size:14.5px;color:var(--mute);margin-top:8px;line-height:1.55}
+
+/* 3. THE STATEMENT + three tall pillars */
+.pillars{background:var(--ink);color:var(--cream);padding-block:128px}
+.pillars .claim{font-family:var(--serif);font-weight:400;font-size:clamp(27px,3.6vw,46px);color:var(--cream);max-width:21ch;line-height:1.2;margin-top:18px;letter-spacing:-.8px}
+.pillars .claim em{font-style:normal;color:var(--ember)}
+.pillars .sub{font-size:17.5px;color:rgba(247,240,226,.64);max-width:58ch;margin-top:26px}
+.three{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;margin-top:76px}
+@media(max-width:1040px){.three{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px}}
+.three figure{margin:0;min-width:0}
+.three img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.three .n{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:2.4px;color:var(--maize);margin-top:26px}
+.three h3{font-family:var(--sans);font-size:21px;color:var(--cream);margin-top:11px}
+.three p{font-size:15.5px;color:rgba(247,240,226,.68);margin-top:12px;line-height:1.6}
+.three .state{display:inline-block;font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;margin-top:18px;color:var(--maize)}
+.three .state.off{color:rgba(247,240,226,.4)}
+
+/* 4. WHY IT MATTERS, a letterbox band then three columns */
+.matters{background:var(--sand);padding-block:104px}
+.matters h2{font-family:var(--serif);font-weight:400;font-size:clamp(25px,3.2vw,40px);max-width:22ch;margin-top:16px}
+.bandimg{margin-top:52px}
+.bandimg img{width:100%;aspect-ratio:32/9;object-fit:cover}
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px;margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.cols3>div{min-width:0}
+.cols3 ul{list-style:none;margin-top:18px}
+.cols3 li{font-size:16px;color:var(--mute);padding:11px 0;border-bottom:1px solid var(--line)}
+.cols3 li:first-child{border-top:1px solid var(--line)}
+
+/* 5. PANJIIA, product showcase on its own ground */
+.product{background:var(--pine);color:var(--pineTx);padding-block:130px;text-align:center;position:relative;overflow:hidden}
+.product::before{content:"";position:absolute;left:50%;top:-220px;width:1000px;height:1000px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,90,44,.15),rgba(255,90,44,0) 62%);pointer-events:none}
+.product .in{position:relative;max-width:1240px;margin:0 auto;padding-inline:max(28px,env(safe-area-inset-left,0px))}
+.product .lab{color:#FF5A2C}
+.product h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.2vw,52px);color:#fff;max-width:18ch;margin:26px auto 0;line-height:1.1;letter-spacing:-1px}
+.product p.l{font-size:18px;color:rgba(203,217,210,.76);max-width:52ch;margin:24px auto 0}
+.pscreens{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;margin-top:66px;text-align:left}
+.pscreens figure{margin:0;min-width:0}
+.pscreens img{width:100%;border-radius:14px;box-shadow:0 26px 60px rgba(0,0,0,.42)}
+.pscreens figcaption{font-size:13.5px;color:rgba(203,217,210,.66);margin-top:22px;line-height:1.6}
+.pscreens figcaption b{display:block;font-family:var(--sans);font-weight:600;font-size:15.5px;color:#fff;margin-bottom:8px}
+.trio{display:none}
+.trio div{max-width:220px}
+.trio b{display:block;font-family:var(--sans);font-weight:600;font-size:15px;color:#fff}
+.trio span{display:block;font-size:13.5px;color:rgba(203,217,210,.6);margin-top:7px;line-height:1.5}
+.disc{font-size:12px;line-height:1.6;color:rgba(203,217,210,.46);max-width:76ch;margin:52px auto 0}
+
+/* 6. WHERE WE WORK, asymmetric */
+.where{background:var(--cream);padding-block:104px}
+.where h2{font-family:var(--serif);font-weight:400;font-size:clamp(25px,3.2vw,40px);max-width:20ch;margin-top:16px}
+.asym{display:grid;grid-template-columns:1.32fr .68fr;gap:26px;margin-top:54px;align-items:start}
+.asym>div{min-width:0}
+.asym .big img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.asym .side{display:grid;gap:26px}
+.asym .side img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.asym h3{font-family:var(--sans);font-size:18px;margin-top:18px}
+.asym p{font-size:14.5px;color:var(--mute);margin-top:7px;line-height:1.55}
+.asym .st8{display:inline-block;font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--emberTx);margin-top:10px}
+
+/* 7. ONE SYSTEM, no images */
+.system{background:var(--paper);padding-block:116px}
+.system h2{font-family:var(--serif);font-weight:400;font-size:clamp(25px,3.2vw,40px);max-width:20ch;margin-top:16px}
+.caps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:56px;background:var(--line);border:1px solid var(--line)}
+.caps>div{background:var(--paper);padding:34px 32px;min-width:0}
+.caps .n{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:2.4px;color:var(--emberTx)}
+.caps h3{font-family:var(--sans);font-size:20px;margin-top:12px}
+.caps p{font-size:15px;color:var(--mute);margin-top:10px;line-height:1.6}
+.enabled{display:grid;grid-template-columns:200px 1fr;gap:48px;margin-top:62px;padding-top:40px;border-top:1px solid var(--line)}
+.enabled>div{min-width:0}
+.en3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.en3 b{font-family:var(--sans);font-weight:600;font-size:16px;display:block}
+.en3 p{font-size:14.5px;color:var(--mute);margin-top:8px;line-height:1.58}
+
+/* 8. RESEARCH, no images, dark */
+.research{background:var(--inkDeep);color:var(--cream);padding-block:96px}
+.research .top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.research h2{font-family:var(--serif);font-weight:400;font-size:clamp(23px,2.8vw,34px);color:var(--cream);max-width:22ch;margin-top:14px}
+.src{margin-top:34px;font-size:12.5px;color:var(--mute);max-width:78ch;line-height:1.6}
+.arts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:46px}
+.art{display:block;min-width:0;text-decoration:none}
+.art .th{display:block;aspect-ratio:16/9;overflow:hidden;border-radius:4px;background:rgba(247,240,226,.07);margin-bottom:18px}
+.art .th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.6,.2,1)}
+.art:hover .th img{transform:scale(1.05)}
+.art:hover{background:rgba(247,240,226,.04)}
+.art .k{display:block;font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--maize)}
+.art h3{font-family:var(--sans);font-size:18px;color:var(--cream);line-height:1.35;margin-top:10px;transition:color .2s}
+.art:hover h3{color:var(--maize)}
+.art .r{display:inline-block;margin-top:14px;font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ember);border-bottom:1px solid rgba(238,108,58,.5);padding-bottom:2px}
+
+/* 9. PEOPLE, three different ratios */
+.people{background:var(--paper);padding-block:104px}
+.people h2{font-family:var(--serif);font-weight:400;font-size:clamp(25px,3.2vw,40px);max-width:19ch;margin-top:16px}
+.pg{display:grid;grid-template-columns:.9fr .62fr .62fr;gap:26px;margin-top:54px;align-items:end}
+.pg figure{margin:0;min-width:0}
+.pg img{width:100%;object-fit:cover}
+.pg .a img{aspect-ratio:3/4}
+.pg .b img{aspect-ratio:1/1}
+.pg .c img{aspect-ratio:4/3}
+.pg .k{font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--emberTx);margin-top:18px}
+.pg p{font-size:15px;color:var(--mute);margin-top:8px;line-height:1.55}
+
+/* 10. WHAT WE OWE, no images */
+.owe{background:var(--sand);padding-block:92px}
+.owe .claim{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3vw,38px);max-width:22ch;margin-top:16px;line-height:1.22}
+.owe .g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px;margin-top:46px;padding-top:36px;border-top:1px solid var(--line)}
+.owe .g>div{min-width:0}
+.owe .g p{font-size:15px;color:var(--mute);margin-top:12px;line-height:1.58}
+
+/* 11. CLOSE, tight frame */
+.close{position:relative;min-height:300px;display:flex;align-items:center;background:var(--ink);overflow:hidden}
+.close img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.close::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,24,38,.96) 0%,rgba(10,24,38,.82) 44%,rgba(10,24,38,.3) 100%)}
+.close .w{position:relative;z-index:2;padding-block:74px}
+.close h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3.1vw,38px);color:var(--cream);max-width:20ch}
+.close p{color:rgba(247,240,226,.75);max-width:52ch;margin-top:16px;font-size:16.5px}
+.close .acts{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+
+footer{background:var(--inkDeep);color:rgba(247,240,226,.55);padding-block:58px 30px}
+footer .t{display:flex;justify-content:space-between;gap:44px;flex-wrap:wrap}
+footer .cols{display:flex;gap:58px;flex-wrap:wrap}
+footer h4{font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(247,240,226,.75);margin-bottom:13px}
+footer a{display:block;font-size:14px;padding:4px 0;color:rgba(247,240,226,.55)}
+footer a:hover{color:var(--cream)}
+footer .base{border-top:1px solid var(--lineD);margin-top:44px;padding-top:22px;font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media(max-width:1060px){
+  .pscreens{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px}
+  .four{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .three{grid-template-columns:1fr;gap:46px}
+  .three img{aspect-ratio:16/10}
+  .cols3,.caps,.en3,.owe .g{grid-template-columns:1fr;gap:30px}
+  .caps{background:none;border:0}
+  .caps>div{border:1px solid var(--line)}
+  .asym{grid-template-columns:1fr}
+  .enabled{grid-template-columns:1fr;gap:26px}
+  .pg{grid-template-columns:1fr;gap:34px}
+  .arts{grid-template-columns:1fr;gap:34px}
+  }
+@media(max-width:820px){
+  .pscreens{grid-template-columns:1fr;gap:40px}
+  .w{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+  .chain,.matters,.where,.people,.owe{padding-block:72px}
+  .pillars,.system{padding-block:80px}
+  .product{padding-block:86px}
+  .research{padding-block:70px}
+  .hero .w{padding-block:64px 56px}
+  .bandimg img{aspect-ratio:16/9}
+  .trio{gap:28px}
+}
+</style><style>
+/* ---- inner page component kit: the homepage language, extended ----
+   Every inner page opens with the same hero construction as the homepage,
+   and every page below carries at least one diagram and one image. */
+.sec{padding-block:104px}
+.sec.sand{background:var(--sand)}
+.sec.cream{background:var(--paper)}
+.sec.ink{background:var(--ink);color:var(--cream)}
+.sec.deep{background:var(--inkDeep);color:var(--cream)}
+.sec.pine{background:var(--pine);color:var(--pineTx)}
+.sec.ink .lab,.sec.deep .lab,.sec.pine .lab{color:var(--maize)}
+.sec.ink h2,.sec.deep h2,.sec.pine h2{color:var(--cream)}
+.sec h2.ed{font-size:clamp(26px,3.3vw,42px);max-width:20ch;margin-top:16px}
+.sec h2.ed.wide{max-width:26ch}
+.lede{font-size:18.5px;color:var(--mute);max-width:62ch;margin-top:22px;line-height:1.68}
+.sec.ink .lede,.sec.deep .lede{color:rgba(247,240,226,.76)}
+.sec.pine .lede{color:var(--pineTx)}
+
+/* diagram block, the thing that carries a mechanism */
+.dia{margin:52px auto 0;max-width:1020px}
+.dia svg{width:100%;height:auto;display:block}
+.dia.narrow{max-width:860px}
+.diacap{margin:18px auto 0;max-width:72ch;text-align:center;font-size:14px;color:var(--mute);line-height:1.6}
+.sec.ink .diacap,.sec.deep .diacap{color:rgba(247,240,226,.6)}
+
+/* numbered or named stage cards */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:52px}
+.cards.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards.c4{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.cards>div,.cards>a{min-width:0;display:block;text-decoration:none;color:inherit}
+.cards img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;margin-bottom:20px;border-radius:3px}
+.cards .n{font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.4px;text-transform:uppercase;color:var(--emberTx)}
+.sec.ink .cards .n,.sec.deep .cards .n,.sec.pine .cards .n{color:var(--maize)}
+.cards h3{font-family:var(--sans);font-weight:600;font-size:20px;margin-top:11px;line-height:1.3}
+.cards p{font-size:15px;color:var(--mute);margin-top:11px;line-height:1.62}
+.sec.ink .cards p,.sec.deep .cards p{color:rgba(247,240,226,.68)}
+.sec.pine .cards p{color:var(--pineTx)}
+
+/* two column text and picture */
+.split{display:grid;grid-template-columns:1.04fr .96fr;gap:60px;align-items:center;margin-top:16px}
+.split.rev>.pic{order:-1}
+.split>div{min-width:0}
+.split .pic img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:3px}
+.split .pic.tall img{aspect-ratio:4/5}
+.split .pic.full img{aspect-ratio:3/2;object-fit:contain;background:transparent}
+
+/* full bleed photograph break */
+.bleed{position:relative;height:clamp(300px,40vw,460px);overflow:hidden}
+.bleed img{width:100%;height:100%;object-fit:cover;display:block}
+.bleed:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,33,51,.3),rgba(15,33,51,0) 48%)}
+
+/* the creed, one line of Fraunces on deep ink */
+.creed{background:var(--inkDeep);padding-block:108px;text-align:center}
+.creed p{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--cream);font-size:clamp(27px,3.9vw,46px);line-height:1.16;max-width:20ch;margin:0 auto}
+.creed span{display:block;margin-top:24px;font-family:var(--body);font-style:normal;font-size:15px;color:rgba(247,240,226,.6);letter-spacing:.2px}
+
+/* a line he said, attributed */
+.quote{max-width:980px;margin:56px auto 0;border-left:3px solid var(--ember);padding:4px 0 4px 30px}
+.quote p{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.5vw,27px);line-height:1.44;color:var(--ink)}
+.sec.ink .quote p,.sec.deep .quote p,.sec.pine .quote p{color:var(--cream)}
+.quote cite{display:block;margin-top:16px;font-family:var(--body);font-style:normal;font-weight:700;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--mute)}
+.sec.ink .quote cite,.sec.deep .quote cite,.sec.pine .quote cite{color:rgba(247,240,226,.5)}
+
+/* rule separated label and sentence rows */
+.kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:48px;border-top:1px solid var(--line)}
+.sec.ink .kv,.sec.deep .kv{border-color:var(--lineD)}
+.kv>div{padding:26px 0;border-bottom:1px solid var(--line);min-width:0}
+.sec.ink .kv>div,.sec.deep .kv>div{border-color:var(--lineD)}
+.kv>div:nth-child(even){border-left:1px solid var(--line);padding-left:38px}
+.sec.ink .kv>div:nth-child(even),.sec.deep .kv>div:nth-child(even){border-color:var(--lineD)}
+.kv b{display:block;font-family:var(--sans);font-weight:600;font-size:16.5px;color:var(--ink)}
+.sec.ink .kv b,.sec.deep .kv b{color:var(--cream)}
+.kv p{font-size:15px;color:var(--mute);margin-top:7px;line-height:1.58}
+.sec.ink .kv p,.sec.deep .kv p{color:rgba(247,240,226,.66)}
+
+/* stage markers, used instead of prose caveats */
+.st8{display:inline-block;font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--emberTx);margin-top:14px}
+.sec.ink .st8,.sec.deep .st8,.sec.pine .st8{color:var(--maize)}
+.st8.q{color:var(--mute)}
+.sec.ink .st8.q,.sec.deep .st8.q{color:rgba(247,240,226,.42)}
+
+/* pill row */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.chips span{font-family:var(--body);font-weight:600;font-size:12.5px;border:1px solid var(--line);border-radius:30px;padding:9px 17px;background:#fff;color:var(--ink)}
+.sec.ink .chips span,.sec.deep .chips span{background:transparent;border-color:var(--lineD);color:rgba(247,240,226,.84)}
+
+/* a plain list of commitments */
+.plist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 46px;margin-top:44px}
+.plist li{list-style:none;font-family:var(--sans);font-weight:500;font-size:17px;line-height:1.5}
+.plist li:before{content:"\25AA";color:var(--ember);font-weight:800;margin-right:13px}
+
+/* people */
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px 30px;margin-top:50px}
+.team>div{min-width:0}
+.team img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px;display:block;margin-bottom:16px}
+.team h3{font-family:var(--sans);font-weight:600;font-size:17px}
+.team .role{font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--emberTx);margin-top:6px}
+.team p{font-size:14.5px;color:var(--mute);margin-top:10px;line-height:1.6}
+
+/* closing band on every page */
+.cta{background:var(--ink);color:var(--cream);padding-block:96px;text-align:center}
+.cta h2{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3.4vw,42px);color:var(--cream);max-width:22ch;margin:0 auto;line-height:1.2;letter-spacing:-.6px}
+.cta .acts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+
+@media(max-width:980px){
+  .split{grid-template-columns:1fr;gap:34px}
+  .split.rev>.pic{order:0}
+  .cards,.cards.c2,.cards.c4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .team{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .sec{padding-block:72px}
+  .cards,.cards.c2,.cards.c4,.team,.kv,.plist{grid-template-columns:1fr}
+  .kv>div:nth-child(even){border-left:0;padding-left:0}
+  .dia{overflow-x:auto}
+  .dia svg{min-width:640px}
+  .quote{padding-left:20px}
+}
+
+/* insights filter */
+.filter{display:flex;flex-wrap:wrap;gap:9px;margin-top:40px}
+.fb{font-family:var(--body);font-weight:600;font-size:13px;border:1px solid var(--line);background:#fff;
+    color:var(--mute);border-radius:30px;padding:9px 17px;cursor:pointer;transition:.18s}
+.fb:hover{border-color:var(--ember);color:var(--ink)}
+.fb.on{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+.fb:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+.cards > [hidden]{display:none}
+
+/* a stage marker that is also a link */
+a.go8{text-decoration:none;border-bottom:1px solid rgba(201,85,42,.45);padding-bottom:2px;transition:.18s}
+a.go8:after{content:" \2192"}
+a.go8:hover{border-color:var(--ember);color:var(--ember)}
+.sec.ink a.go8,.sec.deep a.go8,.sec.pine a.go8{border-color:rgba(244,181,63,.5)}
+
+a.mail{color:inherit;border-bottom:1.5px solid var(--ember);text-decoration:none}
+a.mail:hover{color:var(--emberTx)}
+
+/* insights listing: class names the build gate expects, styled as our cards */
+.cards a.card,.cards div.card{display:block;background:none;border:0;padding:0}
+.cards .lthumb{display:block;aspect-ratio:3/2;overflow:hidden;border-radius:3px;margin-bottom:20px;background:var(--sand)}
+.cards .lthumb img{width:100%;height:100%;object-fit:cover;display:block;margin:0;transition:transform .6s cubic-bezier(.2,.6,.2,1)}
+.cards a.card:hover .lthumb img{transform:scale(1.04)}
+.cards a.card:hover h3{color:var(--emberTx)}
+</style>
+<style>
+.hero.pg{min-height:500px}
+.hero.pg h1{max-width:19ch}
+.hero.pg .w{padding-block:104px 74px}
+.crumb{font-family:var(--body);font-weight:700;font-size:10px;letter-spacing:2.4px;text-transform:uppercase;color:var(--maize);margin-bottom:18px}
+</style>
+</head>
+<body>
+<nav><div class="w">
+  <a href="index.html" aria-label="DNC home"><svg style="height:30px;width:auto;display:block" viewBox="40 54 300 104" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="gs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6C24A"/><stop offset="1" stop-color="#EE6C3A"/></linearGradient></defs><path d="M58 104 A42 42 0 0 1 142 104 Z" fill="url(#gs)"/><rect x="46" y="110" width="108" height="7" rx="3.5" fill="#F7F0E2"/><rect x="76" y="123" width="48" height="6" rx="3" fill="#EE6C3A"/><rect x="84" y="134" width="32" height="6" rx="3" fill="#EE6C3A"/><rect x="90" y="145" width="20" height="6" rx="3" fill="#EE6C3A"/><text x="185" y="125" font-family="Sora, Arial, sans-serif" font-weight="700" font-size="50" letter-spacing="3" fill="#F7F0E2">DNC</text></svg></a>
+  <button class="nb" aria-label="Menu" aria-expanded="false"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+  <div class="nr">
+    <a href="about.html">About</a><a href="what-we-do.html">What We Do</a><a href="approach.html">Approach</a><a href="panjiia.html">Panjiia</a><a href="impact.html">Impact</a><a href="social-impact.html">Social Impact</a><a href="insights.html">Insights</a><a href="partners.html">Partners</a><a class="c" href="contact.html">Contact</a>
+  </div>
+</div></nav>
+<header class="hero pg">
+  <img src="img/h-social.jpg" alt="A farmer pouring threshed grain in the open air">
+  <div class="w">
+    <p class="crumb">Social protection</p>
+    <h1>If you work informally in Africa, there is nothing underneath you when life goes wrong.</h1>
+    <p>A pregnancy, an illness in the planting window, a failed harvest, a funeral, old age. For a smallholder farmer, each of those is carried by the household alone, or not at all.</p>
+    
+  </div>
+</header>
+<section class="sec cream rv"><div class="w">
+<p class="lab">The gap</p>
+<h2 class="ed">Most of a continent is uncovered.</h2>
+<p class="lede">These are not our figures. They are the arena we work in, and they are the reason this programme exists.</p><div class="kv">
+<div><b>19.1% of Africa’s population</b><p>Covered by at least one social protection benefit, against 52.4% worldwide. Coverage moved only from 15.2% in 2015.</p></div>
+<div><b>85.8% of employment in Africa</b><p>Informal. No payslip, no employer of record, and no deduction anyone can collect.</p></div>
+<div><b>Income once a year</b><p>A maize farmer is paid in one window. Food, school fees, inputs, medicine and funerals arrive in all twelve months.</p></div>
+<div><b>No way to assess a contribution</b><p>A scheme cannot onboard somebody whose earnings nobody can see. That is an administrative problem, not an affordability one.</p></div>
+</div><p class="src">Social protection coverage and informality: International Labour Organization, World Social Protection Report 2024 to 2026, and ILO statistics on informal employment. These figures describe the sector, not DNC.</p>
+</div></section>
+<section class="sec deep rv"><div class="w">
+<p class="lab">Why the order matters</p>
+<h2 class="ed">Three things carry the fourth.</h2>
+<p class="lede">Most attempts at this start by selling a pension to somebody who cannot afford one. We think the order is wrong. Finance before planting raises the yield. Infrastructure means more of it is kept and sold well. That is what makes a contribution affordable, and then it repeats. A protected household plants the next season from a stronger base. It is a cycle, not a transfer.</p><div class="dia "><svg viewBox="0 0 940 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A cycle: finance, yield, infrastructure, income, protection, with the record at the centre."><line x1="470" y1="82" x2="630" y2="198" stroke="#2C4258" stroke-width="1.4"/><line x1="630" y1="198" x2="569" y2="386" stroke="#2C4258" stroke-width="1.4"/><line x1="569" y1="386" x2="371" y2="386" stroke="#2C4258" stroke-width="1.4"/><line x1="371" y1="386" x2="310" y2="198" stroke="#2C4258" stroke-width="1.4"/><line x1="310" y1="198" x2="470" y2="82" stroke="#2C4258" stroke-width="1.4"/><line x1="470" y1="250" x2="470" y2="82" stroke="#2C4258" stroke-width="1" stroke-dasharray="3 5"/><line x1="470" y1="250" x2="630" y2="198" stroke="#2C4258" stroke-width="1" stroke-dasharray="3 5"/><line x1="470" y1="250" x2="569" y2="386" stroke="#2C4258" stroke-width="1" stroke-dasharray="3 5"/><line x1="470" y1="250" x2="371" y2="386" stroke="#2C4258" stroke-width="1" stroke-dasharray="3 5"/><line x1="470" y1="250" x2="310" y2="198" stroke="#2C4258" stroke-width="1" stroke-dasharray="3 5"/><circle cx="470" cy="82" r="10" fill="#0A1826" stroke="#F7F0E2" stroke-width="1.8"/><circle cx="470" cy="82" r="4" fill="#F7F0E2"/><text x="470" y="52" text-anchor="middle" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="16" fill="#F7F0E2">Finance</text><text x="470" y="70" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="rgba(247,240,226,.6)">Credit before planting</text><circle cx="630" cy="198" r="10" fill="#0A1826" stroke="#F7F0E2" stroke-width="1.8"/><circle cx="630" cy="198" r="4" fill="#F7F0E2"/><text x="652" y="168" text-anchor="start" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="16" fill="#F7F0E2">Yield</text><text x="652" y="186" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="12" fill="rgba(247,240,226,.6)">More to sell</text><circle cx="569" cy="386" r="10" fill="#0A1826" stroke="#F7F0E2" stroke-width="1.8"/><circle cx="569" cy="386" r="4" fill="#F7F0E2"/><text x="591" y="428" text-anchor="start" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="16" fill="#F7F0E2">Infrastructure</text><text x="591" y="446" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="12" fill="rgba(247,240,226,.6)">More of it kept</text><circle cx="371" cy="386" r="10" fill="#0A1826" stroke="#F7F0E2" stroke-width="1.8"/><circle cx="371" cy="386" r="4" fill="#F7F0E2"/><text x="349" y="428" text-anchor="end" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="16" fill="#F7F0E2">Income</text><text x="349" y="446" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="12" fill="rgba(247,240,226,.6)">More earned</text><circle cx="310" cy="198" r="10" fill="#0A1826" stroke="#EE6C3A" stroke-width="1.8"/><circle cx="310" cy="198" r="4" fill="#EE6C3A"/><text x="288" y="168" text-anchor="end" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="16" fill="#EE6C3A">Protection</text><text x="288" y="186" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="12" fill="rgba(247,240,226,.6)">Cover becomes affordable</text><circle cx="470" cy="250" r="58" fill="#F7F0E2"/><text x="470" y="248" text-anchor="middle" font-family="Sora,Arial,sans-serif" font-weight="700" font-size="17" fill="#0F2133">The record</text><text x="470" y="268" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" fill="#5E5952">underneath all five</text></svg></div>
+</div></section>
+<section class="sec ink rv"><div class="w">
+<p class="lab">How it would fit together</p>
+<h2 class="ed">Four layers, and one transaction at the centre of them.</h2>
+<p class="lede">The farmer authorises a specific, revocable, fixed deduction from the proceeds of a defined crop sale. The deduction reduces what the buyer already owes for the crop, which is what keeps the structure clean for a regulator. The buyer never holds the farmer’s money.</p><div class="dia "><svg viewBox="0 0 1060 472" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four layers around one transaction: policy, the market, the institutions, and the record underneath."><rect x="0" y="0" width="1060" height="96" rx="4" fill="rgba(247,240,226,.04)" stroke="#8A9AAC" stroke-width="1.2" stroke-opacity=".55"/><rect x="0" y="0" width="4" height="96" rx="2" fill="#8A9AAC"/><text x="30" y="34" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" letter-spacing="2.2" fill="#8A9AAC">LAYER 1</text><text x="30" y="60" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="18" fill="#F7F0E2">Policy and the legal instrument</text><text x="30" y="82" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="rgba(247,240,226,.66)">The ILO, the Ministry of Agriculture and the Ministry of Labour and Social Security. The route by which a crop buyer may lawfully act as a collecting agent.</text><rect x="0" y="118" width="1060" height="96" rx="4" fill="rgba(238,108,58,.06)" stroke="#EE6C3A" stroke-width="1.2" stroke-opacity=".55"/><rect x="0" y="118" width="4" height="96" rx="2" fill="#EE6C3A"/><text x="30" y="152" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" letter-spacing="2.2" fill="#EE6C3A">LAYER 2</text><text x="30" y="178" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="18" fill="#F7F0E2">The market, and one transaction</text><text x="30" y="200" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="rgba(247,240,226,.66)">The farmer grows and sells. A field agent weighs, pays, records the sale and the authorised deduction, offline, at the homestead.</text><rect x="0" y="236" width="1060" height="96" rx="4" fill="rgba(247,240,226,.04)" stroke="#8A9AAC" stroke-width="1.2" stroke-opacity=".55"/><rect x="0" y="236" width="4" height="96" rx="2" fill="#8A9AAC"/><text x="30" y="270" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" letter-spacing="2.2" fill="#8A9AAC">LAYER 3</text><text x="30" y="296" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="18" fill="#F7F0E2">The social protection institutions</text><text x="30" y="318" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="rgba(247,240,226,.66)">A pension scheme receives the retirement contribution. A health scheme receives the health contribution and enrols the household.</text><rect x="0" y="354" width="1060" height="96" rx="4" fill="rgba(238,108,58,.06)" stroke="#EE6C3A" stroke-width="1.2" stroke-opacity=".55"/><rect x="0" y="354" width="4" height="96" rx="2" fill="#EE6C3A"/><text x="30" y="388" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" letter-spacing="2.2" fill="#EE6C3A">LAYER 4</text><text x="30" y="414" font-family="Sora,Arial,sans-serif" font-weight="600" font-size="18" fill="#F7F0E2">The record underneath all of it</text><text x="30" y="436" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="rgba(247,240,226,.66)">A verified transaction history in the farmer’s own name. Nothing above can be priced, targeted or reconciled without it.</text></svg></div>
+</div></section>
+<section class="sec cream rv"><div class="w">
+<p class="lab">Where this stands</p>
+<h2 class="ed">An engagement, and we are precise about that word.</h2>
+<p class="lede">DNC is in an active engagement with the International Labour Organization, the National Pension Scheme Authority and the National Health Insurance Management Authority on extending social protection to smallholder farmers.</p><div class="cards ">
+<div><p class="n">Done</p><h3>Submitted</h3><p>A concept note and a pilot report in September 2026, then a programme brief, a presentation and a full investment case. Meetings have run since, on a regular call.</p><span class="st8">Complete</span></div>
+<div><p class="n">Now</p><h3>Under discussion</h3><p>A smallholder field pilot in Eastern Province, most likely in the first half of 2027, and the legal route by which a crop buyer may act as a collecting agent.</p><span class="st8">In progress</span></div>
+<div><p class="n">Next</p><h3>Not yet agreed</h3><p>There is no agreement, no memorandum and no funding commitment. No integration exists between Panjiia and any national scheme. We would rather say so than imply otherwise.</p><span class="st8">Open</span></div>
+</div><p class="src">Institutions are named here as parties to an engagement and as proposed partners. Their roles are set out as sought rather than as agreed. We publish no programme cost, because the figures in our own submissions have not yet been reconciled.</p>
+</div></section>
+<section class="sec sand rv"><div class="w">
+<p class="lab">Why this is the piece that is missing</p>
+<h2 class="ed">A record is the thing a scheme cannot work without.</h2>
+<p class="lede">The reason social security has not been extended to the informal economy across most of Africa is not that nobody wants it. It is that you cannot track an income you cannot see, and if you cannot see an income you cannot set a contribution against it. A verified transaction history makes a farmer identifiable, locatable and income-visible, which is exactly the gate that enrolment has always failed at.</p><div class="split rev"><div><p class="lede" style="margin-top:0">There is precedent. Contributions have been withheld at the crop sale in Brazil since 1991, and at the point of sale across cocoa in Ghana since 2024. When farmers in Zambia were asked how they would prefer to contribute, deduction by the buyer at the point of sale was chosen over mobile money, over headmen and over clinics.</p><span class="st8">ILO Lusaka study, and comparable national schemes</span></div><div class="pic full"><img src="img/p-precedent.jpg" alt="A trader carrying a tray of produce on her head at a roadside"></div></div>
+</div></section>
+<section class="cta rv"><div class="w"><h2>We are not asking you to train anybody. We are asking you to build the market underneath the training.</h2><div class="acts"><a class="btn" href="partners.html">Partner with us</a><a class="btn o" href="panjiia.html">How the record works</a></div></div></section>
+<footer><div class="w">
+  <div class="t">
+    <div><svg style="height:36px;width:auto;display:block" viewBox="40 54 300 104" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6C24A"/><stop offset="1" stop-color="#EE6C3A"/></linearGradient></defs><path d="M58 104 A42 42 0 0 1 142 104 Z" fill="url(#gf)"/><rect x="46" y="110" width="108" height="7" rx="3.5" fill="#F7F0E2"/><rect x="76" y="123" width="48" height="6" rx="3" fill="#EE6C3A"/><rect x="84" y="134" width="32" height="6" rx="3" fill="#EE6C3A"/><rect x="90" y="145" width="20" height="6" rx="3" fill="#EE6C3A"/><text x="185" y="125" font-family="Sora, Arial, sans-serif" font-weight="700" font-size="50" letter-spacing="3" fill="#F7F0E2">DNC</text></svg><p style="font-family:var(--serif);font-style:italic;color:var(--maize);font-size:15px;margin-top:12px">Dare to Dream</p></div>
+    <div class="cols">
+      <div><h4>Company</h4><a href="#">About</a><a href="#">What we do</a><a href="#">Approach</a><a href="#">Impact</a></div>
+      <div><h4>Panjiia</h4><a href="#">The platform</a><a href="#">Build status</a></div>
+      <div><h4>Research</h4><a href="#">All insights</a><a href="#">Farmer finance</a></div>
+      <div><h4>Involvement</h4><a href="#">Partners</a><a href="#">Careers</a><a href="#">Contact</a></div>
+    </div>
+  </div>
+  <div class="base"><span>&copy; 2026 Daka Ntembe Corporation. DNC is a trading name of Daka Ntembe Corporation Limited.</span><span>Petauke, Eastern Province, Zambia</span></div>
+</div></footer>
+
+<script>
+(function(){var b=document.querySelector("nav"),t=b&&b.querySelector(".nb");if(b&&t){function c(){b.classList.remove("open");t.setAttribute("aria-expanded","false");}
+t.addEventListener("click",function(e){e.stopPropagation();var o=b.classList.toggle("open");t.setAttribute("aria-expanded",o?"true":"false");});
+document.addEventListener("click",function(e){if(b.classList.contains("open")&&!b.contains(e.target))c();});
+b.querySelectorAll(".nr a").forEach(function(a){a.addEventListener("click",c);});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")c();});}
+var els=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.08});
+els.forEach(function(e){io.observe(e)});setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},2200);}
+else{els.forEach(function(e){e.classList.add('in')});}
+})();
+</script>
+</body></html>
