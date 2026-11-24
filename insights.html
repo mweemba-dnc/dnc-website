@@ -2,9 +2,18 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Insights | Daka Ntembe Corporation (DNC)</title>
 <meta name="description" content="Research and analysis on smallholder finance, procurement and rural credit in Zambia, published whether or not it flatters us.">
+<link rel="canonical" href="https://www.dakantembe.com/insights.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#0F2133">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Daka Ntembe Corporation">
+<meta property="og:title" content="Insights | Daka Ntembe Corporation (DNC)"><meta property="og:description" content="Research and analysis on smallholder finance, procurement and rural credit in Zambia, published whether or not it flatters us.">
+<meta property="og:url" content="https://www.dakantembe.com/insights.html">
+<meta property="og:image" content="https://www.dakantembe.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Insights | Daka Ntembe Corporation (DNC)"><meta name="twitter:description" content="Research and analysis on smallholder finance, procurement and rural credit in Zambia, published whether or not it flatters us."><meta name="twitter:image" content="https://www.dakantembe.com/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","url":"https://www.dakantembe.com/insights.html","name":"Insights | Daka Ntembe Corporation (DNC)","description":"Research and analysis on smallholder finance, procurement and rural credit in Zambia, published whether or not it flatters us.","inLanguage":"en","isPartOf":{"@id":"https://www.dakantembe.com/#site"},"about":{"@id":"https://www.dakantembe.com/#org"},"publisher":{"@id":"https://www.dakantembe.com/#org"}}</script>
 <style>
 :root{
   --ink:#0F2133; --inkDeep:#0A1826; --card:#17324C; --ember:#EE6C3A; --emberTx:#C9552A;
@@ -229,6 +238,11 @@ footer .base{border-top:1px solid var(--lineD);margin-top:44px;padding-top:22px;
   .hero .w{padding-block:64px 56px}
   .bandimg img{aspect-ratio:16/9}
   .trio{gap:28px}
+  /* the wide hero scrim runs left to right, which on a phone leaves the right
+     half of the text sitting on open photograph. Lift it from the bottom instead. */
+  .hero::after{background:linear-gradient(to top,rgba(10,24,38,.97) 0%,rgba(10,24,38,.95) 46%,rgba(10,24,38,.87) 70%,rgba(10,24,38,.56) 88%,rgba(10,24,38,.30) 100%)}
+  .hero img{object-position:62% 38%}
+  .hero p{max-width:none}
 }
 </style><style>
 /* ---- inner page component kit: the homepage language, extended ----
@@ -252,6 +266,7 @@ footer .base{border-top:1px solid var(--lineD);margin-top:44px;padding-top:22px;
 .dia{margin:52px auto 0;max-width:1020px}
 .dia svg{width:100%;height:auto;display:block}
 .dia.narrow{max-width:860px}
+.d-narrow{display:none}
 .diacap{margin:18px auto 0;max-width:72ch;text-align:center;font-size:14px;color:var(--mute);line-height:1.6}
 .sec.ink .diacap,.sec.deep .diacap{color:rgba(247,240,226,.6)}
 
@@ -344,8 +359,13 @@ footer .base{border-top:1px solid var(--lineD);margin-top:44px;padding-top:22px;
   .sec{padding-block:72px}
   .cards,.cards.c2,.cards.c4,.team,.kv,.plist{grid-template-columns:1fr}
   .kv>div:nth-child(even){border-left:0;padding-left:0}
-  .dia{overflow-x:auto}
-  .dia svg{min-width:640px}
+  /* a diagram with a phone drawing swaps to it and stays inside the screen.
+     one without still scrolls sideways rather than shrinking to nothing. */
+  .d-wide{display:none}
+  .d-narrow{display:block}
+  .dia{margin-top:40px}
+  .dia:not(:has(.d-narrow)){overflow-x:auto}
+  .dia:not(:has(.d-narrow)) svg{min-width:640px}
   .quote{padding-left:20px}
 }
 
